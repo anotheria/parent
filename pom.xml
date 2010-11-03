@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>net.anotheria</groupId>
 	<artifactId>parent</artifactId>
-	<version>1.2-SNAPSHOT</version>
+	<version>1.2</version>
 	<packaging>pom</packaging>
 	<name>Anotheria Parent POM</name>
 	<description>Defines various standards for all Anotheria Maven Projects</description>
@@ -24,9 +24,9 @@
 	</ciManagement>
 
 	<scm>
-		<url>svn:svn://svn.anotheria.net/parent/trunk</url>
-		<connection>scm:svn:svn://svn.anotheria.net/opensource/parent/trunk</connection>
-		<developerConnection>scm:svn:svn://svn.anotheria.net/opensource/parent/trunk</developerConnection>
+		<url>svn:svn://svn.anotheria.net/parent/tags/parent-1.2</url>
+		<connection>scm:svn:svn://svn.anotheria.net/opensource/parent/tags/parent-1.2</connection>
+		<developerConnection>scm:svn:svn://svn.anotheria.net/opensource/parent/tags/parent-1.2</developerConnection>
 	</scm>
 
 	<properties>
@@ -82,6 +82,9 @@
     <testResources>
       <testResource>
         <directory>${project.basedir}/test/appdata</directory>
+      </testResource>
+      <testResource>
+        <directory>${project.basedir}/test/junit</directory>
       </testResource>
     </testResources>
     <plugins>
@@ -168,45 +171,6 @@
 			</dependency>
 		</dependencies>        
       </plugin>
-      
-    
-    
-<!-- 
-    	<plugin>
-		  <groupId>org.codehaus.mojo</groupId>
-      	  <artifactId>apt-maven-plugin</artifactId>
-      	  <version>${apt-plugin.version}</version>
-      	  <dependencies>
-      	  	<dependency>
-      	  		<groupId>org.jfrog.maven.annomojo</groupId>
-      	  		<artifactId>maven-plugin-tools-anno</artifactId>
-      	  		<version>${tools-anno.version}</version>
-      	  	</dependency>
-      	  	<dependency>
-				<groupId>ano</groupId>
-				<artifactId>distributme</artifactId>
-				<version>stable</version>
-				<scope>system</scope>
-				<systemPath>${project.basedir}/lib/distributeme.jar</systemPath>
-      	  	</dependency>
-      	  </dependencies>
-          <executions>
-            <execution>
-                <id>process</id>
-		        <goals>
-		           <goal>process</goal>
-		        </goals>
-            	<phase>generate-sources</phase>
-            	<configuration>
-            		<factory>org.distributeme.processors.GeneratorProcessorFactory</factory>
-            		<encoding>UTF-8</encoding>
-					<verbose>true</verbose>
-					<outputDirectory>${project.basedir}/generated/java</outputDirectory>
-          		</configuration>
-            </execution>
-          </executions>
-    	</plugin>
-    	-->
     </plugins>
   </build>	
   <reporting>
@@ -242,7 +206,6 @@
         <version>${checkstyle-plugin.version}</version>
         <configuration>
           <enableRulesSummary>false</enableRulesSummary>
-           <!--   <configLocation>../build/docs/anotheria_checks.xml</configLocation> -->
            <configLocation>anotheria_checks.xml</configLocation>
         </configuration>
       </plugin>
@@ -272,6 +235,7 @@
 		  <artifactId>junit</artifactId>
 		  <version>${junit.version}</version>
 		  <scope>test</scope>
-		</dependency>	
+		</dependency>
+			
 	</dependencies>
 </project>
