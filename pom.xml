@@ -117,7 +117,8 @@
 			<!--  skip by default - prevent cobertura from double execute -->
 			<skip>true</skip><!--  back to true -->
 			<includes>
-				<include>**/*Suite.java</include>
+					<include>**/*Test.java</include>
+					<include>**/*Suite.java</include>
 			</includes>
 
 		</configuration>
@@ -132,6 +133,7 @@
                         <!-- Never skip running the tests when the test phase is invoked -->
 						<skip>false</skip>
 						<includes>
+							<include>**/*Test.java</include>
 							<include>**/*Suite.java</include>
 						</includes>
 	                </configuration>
