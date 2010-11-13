@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>net.anotheria</groupId>
 	<artifactId>parent</artifactId>
-	<version>1.4-SNAPSHOT</version>
+	<version>1.4</version>
 	<packaging>pom</packaging>
 	<name>Anotheria Parent POM</name>
 	<description>Defines various standards for all Anotheria Maven Projects</description>
@@ -24,9 +24,9 @@
 	</ciManagement>
 
 	<scm>
-		<url>svn:svn://svn.anotheria.net/parent/trunk</url>
-		<connection>scm:svn:svn://svn.anotheria.net/opensource/parent/trunk</connection>
-		<developerConnection>scm:svn:svn://svn.anotheria.net/opensource/parent/trunk</developerConnection>
+		<url>svn:svn://svn.anotheria.net/parent/tags/parent-1.4</url>
+		<connection>scm:svn:svn://svn.anotheria.net/opensource/parent/tags/parent-1.4</connection>
+		<developerConnection>scm:svn:svn://svn.anotheria.net/opensource/parent/tags/parent-1.4</developerConnection>
 	</scm>
 
 	<properties>
@@ -45,6 +45,14 @@
 		<!--  dependencies -->
 		<log4j.version>1.2.16</log4j.version>
 		<junit.version>4.5</junit.version>
+		<jdom.version>1.1.1</jdom.version>
+		<ant.version>1.8.1</ant.version>
+		<mail.version>1.4.1</mail.version>
+		<commons-dbcp.version>1.4</commons-dbcp.version>
+		<servlet-api.version>2.5</servlet-api.version>
+		<jsp-api.version>2.1</jsp-api.version>
+		<jmock.version>2.5.1</jmock.version>
+		
 	</properties>
 
 	<inceptionYear>2010</inceptionYear>
