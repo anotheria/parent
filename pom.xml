@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>net.anotheria</groupId>
 	<artifactId>parent</artifactId>
-	<version>1.5-SNAPSHOT</version>
+	<version>1.5</version>
 	<packaging>pom</packaging>
 	<name>Anotheria Parent POM</name>
 	<description>Defines various standards for all Anotheria Maven Projects</description>
@@ -24,9 +24,9 @@
 	</ciManagement>
 
 	<scm>
-		<url>svn:svn://svn.anotheria.net/parent/trunk</url>
-		<connection>scm:svn:svn://svn.anotheria.net/opensource/parent/trunk</connection>
-		<developerConnection>scm:svn:svn://svn.anotheria.net/opensource/parent/trunk</developerConnection>
+		<url>svn:svn://svn.anotheria.net/parent/tags/parent-1.5</url>
+		<connection>scm:svn:svn://svn.anotheria.net/opensource/parent/tags/parent-1.5</connection>
+		<developerConnection>scm:svn:svn://svn.anotheria.net/opensource/parent/tags/parent-1.5</developerConnection>
 	</scm>
 
 	<properties>
@@ -43,21 +43,56 @@
         <findbugs-plugin.version>2.0.1</findbugs-plugin.version>
 		
 		<!--  dependencies -->
-		<log4j.version>1.2.16</log4j.version>
 		<junit.version>4.5</junit.version>
 		<jdom.version>1.1.1</jdom.version>
 		<ant.version>1.8.1</ant.version>
 		<mail.version>1.4.1</mail.version>
 		<commons-dbcp.version>1.4</commons-dbcp.version>
-		<servlet-api.version>2.5</servlet-api.version>
-		<jsp-api.version>2.1</jsp-api.version>
-		<jmock.version>2.5.1</jmock.version>
-		
 	</properties>
 
 	<inceptionYear>2010</inceptionYear>
 	<developers>
 	</developers>
+
+	<dependencyManagement>
+	  	<dependencies>
+	  		<dependency>
+				<groupId>log4j</groupId>
+				<artifactId>log4j</artifactId>
+				<version>1.2.16</version>
+			</dependency>
+	  		<dependency>
+    			<groupId>javax.servlet</groupId>
+    			<artifactId>servlet-api</artifactId>
+    			<version>2.5</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+		    	<groupId>javax.servlet.jsp</groupId>
+		    	<artifactId>jsp-api</artifactId>
+    			<version>2.1</version>
+				<scope>provided</scope>
+			</dependency>	
+			<dependency>
+			  <groupId>commons-beanutils</groupId>
+			  <artifactId>commons-beanutils</artifactId>
+			  <version>1.8.0</version>
+			</dependency>	
+
+			<dependency>
+		    	<groupId>org.jmock</groupId>
+		    	<artifactId>jmock</artifactId>
+		    	<version>2.5.1</version>
+		    	<scope>test</scope>
+			</dependency>	
+			<dependency>
+			   	<groupId>struts</groupId>
+			   	<artifactId>struts</artifactId>
+			   	<version>1.2.9</version>
+			</dependency>	 
+			
+		</dependencies>
+	</dependencyManagement>
 
 	<distributionManagement>
 		<!-- use the following if you're not using a snapshot version. -->
@@ -238,7 +273,6 @@
 		<dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
-			<version>${log4j.version}</version>
 		</dependency>
 		<dependency>
 		  <groupId>junit</groupId>
