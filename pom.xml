@@ -240,6 +240,22 @@
               <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
               <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
             </manifest>
+				<manifestSections>
+					<manifestSection>
+						<name>Hudson</name>
+						<manifestEntries>
+		            		<SvnRevision>${env.SVN_REVISION}</SvnRevision>
+		            		<BuildTag>${env.BUILD_TAG}</BuildTag>
+		            		<BuildUrl>${env.BUILD_URL}</BuildUrl>
+		            		<BuildId>${env.BUILD_ID}</BuildId>
+		            		<BuildNumber>${env.BUILD_NUMBER}</BuildNumber>
+		            		<SvnRevision>${env.SVN_REVISION}</SvnRevision>
+		            		<JavaHome>${env.JAVA_HOME}</JavaHome>
+						</manifestEntries>
+					</manifestSection>
+			</manifestSections>            
+            <!-- manifestEntries>
+            </manifestEntries-->
           </archive>
         </configuration>
       </plugin>
