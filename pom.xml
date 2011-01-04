@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>net.anotheria</groupId>
 	<artifactId>parent</artifactId>
-	<version>1.6-SNAPSHOT</version>
+	<version>1.6</version>
 	<packaging>pom</packaging>
 	<name>Anotheria Parent POM</name>
 	<description>Defines various standards for all Anotheria Maven Projects</description>
@@ -32,9 +32,9 @@
 	</ciManagement>
 
 	<scm>
-		<url>svn:svn://svn.anotheria.net/parent/trunk</url>
-		<connection>scm:svn:svn://svn.anotheria.net/opensource/parent/trunk</connection>
-		<developerConnection>scm:svn:svn://svn.anotheria.net/opensource/parent/trunk</developerConnection>
+		<url>svn:svn://svn.anotheria.net/parent/tags/parent-1.6</url>
+		<connection>scm:svn:svn://svn.anotheria.net/opensource/parent/tags/parent-1.6</connection>
+		<developerConnection>scm:svn:svn://svn.anotheria.net/opensource/parent/tags/parent-1.6</developerConnection>
 	</scm>
 
 	<properties>
@@ -157,7 +157,7 @@
       </plugins>
     </pluginManagement>
 
-    <finalName>${artifactId}-${version}</finalName>
+    <finalName>${project.artifactId}-${project.version}</finalName>
     <sourceDirectory>${project.basedir}/java</sourceDirectory>
     <testSourceDirectory>${project.basedir}/test/junit</testSourceDirectory>
     <resources>
@@ -327,7 +327,7 @@
 		</configuration>
       </plugin>
       
-  	</plugins>
+  	</plugins> 
   </reporting>
 	<dependencies>
 		<dependency>
