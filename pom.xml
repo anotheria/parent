@@ -13,6 +13,14 @@
 		<url>http://www.anotheria.net/</url>
 	</organization>
 
+	<licenses>
+ 		<license>
+ 		<name>MIT License</name>
+ 		<url>http://www.opensource.org/licenses/mit-license.php</url>
+ 		<distribution>repo</distribution>
+ 		</license>
+ 	</licenses> 
+
 	<url>http://infra.anotheria.net/jira/</url>
 	<issueManagement>
 		<system>JIRA</system>
@@ -149,12 +157,8 @@
       </plugins>
     </pluginManagement>
 
-    <!--  <directory>${project.basedir}/build</directory> -->
-    <!-- <outputDirectory>${project.build.directory}/classes</outputDirectory> -->
     <finalName>${artifactId}-${version}</finalName>
-    <!-- <testOutputDirectory>${project.build.directory}/test-classes</testOutputDirectory> -->
     <sourceDirectory>${project.basedir}/java</sourceDirectory>
-    <!-- scriptSourceDirectory>${project.basedir}/sql</scriptSourceDirectory> -->
     <testSourceDirectory>${project.basedir}/test/junit</testSourceDirectory>
     <resources>
       <resource>
