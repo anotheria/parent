@@ -116,6 +116,7 @@
 			<id>ano-snapshot</id>
 			<name>Anotheria Snapshot Repository</name>
 			<url>http://nexus.anotheria.net/nexus/content/repositories/snapshots</url>
+			<uniqueVersion>true</uniqueVersion>
 		</snapshotRepository>
 	</distributionManagement>
 
