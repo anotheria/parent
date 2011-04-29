@@ -21,18 +21,18 @@
  		</license>
  	</licenses> 
 
-	<url>http://infra.anotheria.net/jira/</url>
+	<url>http://opensource.anotheria.net</url>
 	<issueManagement>
 		<system>JIRA</system>
-		<url>http://jira.anotheria.net/jira</url>
+		<url>http://jira.opensource.anotheria.net</url>
 	</issueManagement>
 	<ciManagement>
 		<system>hudson</system>
-		<url>http://infra.anotheria.net/hudson</url>
+		<url>http://hudson.opensource.anotheria.net</url>
 	</ciManagement>
 
 	<scm>
-		<url>svn:svn://svn.anotheria.net/parent/trunk</url>
+		<url>svn:svn://svn.anotheria.net/opensource/parent/trunk</url>
 		<connection>scm:svn:svn://svn.anotheria.net/opensource/parent/trunk</connection>
 		<developerConnection>scm:svn:svn://svn.anotheria.net/opensource/parent/trunk</developerConnection>
 	</scm>
@@ -51,8 +51,19 @@
 
 	<inceptionYear>2010</inceptionYear>
 	<developers>
+		<developer>
+			<id>ano-team</id>
+			<name>Core Anotheria Team</name>
+			<email>info@anotheria.net</email>
+			<organization>anotheria.net</organization>
+			<organizationUrl>http://www.anotheria.net</organizationUrl>
+			<timezone>+1</timezone>
+			<roles>
+				<role>Everything</role>
+			</roles>
+		</developer>
 	</developers>
-
+	
 	<dependencyManagement>
 	  	<dependencies>
 	  		<dependency>
@@ -166,7 +177,7 @@
       </plugins>
     </pluginManagement>
 
-    <finalName>${artifactId}-${version}</finalName>
+    <finalName>${project.artifactId}-${project.version}</finalName>
     <sourceDirectory>${project.basedir}/java</sourceDirectory>
     <testSourceDirectory>${project.basedir}/test/junit</testSourceDirectory>
     <resources>
