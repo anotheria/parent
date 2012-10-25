@@ -1,10 +1,9 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>net.anotheria</groupId>
 	<artifactId>parent</artifactId>
-	<version>1.16-SNAPSHOT</version>
+	<version>1.16</version>
 	<packaging>pom</packaging>
 	<name>Anotheria Parent POM</name>
 	<description>Defines various standards for all Anotheria Maven Projects</description>
@@ -33,9 +32,9 @@
 	</ciManagement>
 
 	<scm>
-		<url>svn:svn://svn.anotheria.net/opensource/parent/trunk</url>
-		<connection>scm:svn:svn://svn.anotheria.net/opensource/parent/trunk</connection>
-		<developerConnection>scm:svn:svn://svn.anotheria.net/opensource/parent/trunk</developerConnection>
+		<url>svn:svn://svn.anotheria.net/opensource/parent/tags/parent-1.16</url>
+		<connection>scm:svn:svn://svn.anotheria.net/opensource/parent/tags/parent-1.16</connection>
+		<developerConnection>scm:svn:svn://svn.anotheria.net/opensource/parent/tags/parent-1.16</developerConnection>
 	</scm>
 
 	<properties>
@@ -199,7 +198,7 @@
 										</goals>
 									</pluginExecutionFilter>
 									<action>
-										<ignore></ignore>
+										<ignore />
 									</action>
 								</pluginExecution>
 								<pluginExecution>
@@ -218,7 +217,7 @@
 										</goals>
 									</pluginExecutionFilter>
 									<action>
-										<ignore></ignore>
+										<ignore />
 									</action>
 								</pluginExecution>
 								<pluginExecution>
@@ -238,7 +237,7 @@
 										</goals>
 									</pluginExecutionFilter>
 									<action>
-										<ignore></ignore>
+										<ignore />
 									</action>
 								</pluginExecution>
 								<pluginExecution>
@@ -257,7 +256,7 @@
 										</goals>
 									</pluginExecutionFilter>
 									<action>
-										<ignore></ignore>
+										<ignore />
 									</action>
 								</pluginExecution>
 								<pluginExecution>
@@ -276,7 +275,7 @@
 										</goals>
 									</pluginExecutionFilter>
 									<action>
-										<ignore></ignore>
+										<ignore />
 									</action>
 								</pluginExecution>
 								<pluginExecution>
@@ -295,7 +294,7 @@
 										</goals>
 									</pluginExecutionFilter>
 									<action>
-										<ignore></ignore>
+										<ignore />
 									</action>
 								</pluginExecution>
 								<pluginExecution>
@@ -314,7 +313,7 @@
 										</goals>
 									</pluginExecutionFilter>
 									<action>
-										<ignore></ignore>
+										<ignore />
 									</action>
 								</pluginExecution>
 							</pluginExecutions>
