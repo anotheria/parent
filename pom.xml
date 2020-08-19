@@ -107,11 +107,11 @@
 				<artifactId>commons-beanutils</artifactId>
 				<version>1.9.2</version>
 			</dependency>
-          <dependency>
-                <groupId>com.google.code.findbugs</groupId>
-                <artifactId>findbugs</artifactId>
-                <version>3.0.1</version>
-            </dependency>
+			<dependency>
+				<groupId>com.github.spotbugs</groupId>
+				<artifactId>spotbugs</artifactId>
+				<version>4.1.1</version>
+			</dependency>
 			<dependency>
 				<groupId>org.jmock</groupId>
 				<artifactId>jmock</artifactId>
@@ -154,9 +154,9 @@
 					<version>3.6</version>
 				</plugin>
 				<plugin>
-					<groupId>org.codehaus.mojo</groupId>
-					<artifactId>findbugs-maven-plugin</artifactId>
-					<version>3.0.4</version>
+					<groupId>com.github.spotbugs</groupId>
+					<artifactId>spotbugs-maven-plugin</artifactId>
+					<version>4.0.4</version>
 				</plugin>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
@@ -287,7 +287,6 @@
 				</configuration>
 			</plugin>
 
-
 			<!-- checkstyle -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -299,13 +298,12 @@
 				</configuration>
 			</plugin>
 
-			<!-- findbugs -->
+			<!-- spotbugs (successor of findbugs) -->
 			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>findbugs-maven-plugin</artifactId>
-				<version>3.0.1</version>
+				<groupId>com.github.spotbugs</groupId>
+				<artifactId>spotbugs-maven-plugin</artifactId>
+				<version>4.0.4</version>
 				<configuration>
-					<findbugsXmlOutput>true</findbugsXmlOutput>
 					<xmlOutput>true</xmlOutput>
 				</configuration>
 			</plugin>
@@ -330,11 +328,6 @@
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 		</dependency>
-		<dependency>
-               <groupId>com.google.code.findbugs</groupId>
-               <artifactId>findbugs</artifactId>
-               <scope>provided</scope>
-           </dependency>
 	</dependencies>
 	<profiles>
     <profile>
