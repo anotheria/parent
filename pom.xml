@@ -328,6 +328,11 @@
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>com.github.spotbugs</groupId>
+			<artifactId>spotbugs</artifactId>
+			<scope>provided</scope>
+		</dependency>
 	</dependencies>
 	<profiles>
     <profile>
