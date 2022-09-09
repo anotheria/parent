@@ -265,7 +265,7 @@
 					<dependency>
 						<groupId>net.anotheria</groupId>
 						<artifactId>ano-buildutils</artifactId>
-						<version>4</version>
+						<version>5</version>
 					</dependency>
 				</dependencies>
 				<configuration>
