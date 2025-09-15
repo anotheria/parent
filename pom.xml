@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>net.anotheria</groupId>
 	<artifactId>parent</artifactId>
-	<version>4.1-SNAPSHOT</version>
+	<version>4.3-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>Anotheria Parent POM</name>
 	<description>Defines various standards for all Anotheria Maven Projects</description>
@@ -250,6 +250,17 @@
 					</archive>
 				</configuration>
 			</plugin>
+			<plugin>
+			      <groupId>org.sonatype.central</groupId>
+			      <artifactId>central-publishing-maven-plugin</artifactId>
+			      <version>0.8.0</version>
+			      <extensions>true</extensions>
+			      <configuration>
+			        <publishingServerId>central</publishingServerId>
+			        <autoPublish>true</autoPublish>          
+			        <waitUntil>validated</waitUntil>         
+			      </configuration>
+			    </plugin>
 
 			<!-- checkstyle -->
 			<plugin>
@@ -386,4 +397,10 @@
       </build>
     </profile>
   </profiles>
+  <distributionManagement>
+    <snapshotRepository>
+      <id>ano-commercial</id>
+      <url>https://repository2.anotheria.net/repository/maven-snapshots/</url>
+    </snapshotRepository>
+  </distributionManagement>
 </project>
