@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>net.anotheria</groupId>
 	<artifactId>parent</artifactId>
-	<version>4.3-SNAPSHOT</version>
+	<version>4.4-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>Anotheria Parent POM</name>
 	<description>Defines various standards for all Anotheria Maven Projects</description>
@@ -72,7 +72,7 @@
 			<dependency>
 			    <groupId>ch.qos.logback</groupId>
 			    <artifactId>logback-classic</artifactId>
-			    <version>1.4.11</version>
+			    <version>1.4.12</version>
 			</dependency>
 			<dependency>
 				<groupId>junit</groupId>
